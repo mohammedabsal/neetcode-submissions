@@ -6,3 +6,10 @@ class Solution:
             d[num] = d.get(num,0)+1
         re=[i for i,v in d.items() if v>n//2]
         return re[0]
+
+## Method 2
+        # d=defaultdict(int)
+        # for num in nums:
+        #     d[num]=d.get(num,0)+1 ## frequency counted
+        # res=sorted(d, key=lambda x:d[x], reverse=True)[:k]
+        # return res
